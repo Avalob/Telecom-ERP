@@ -4,7 +4,7 @@
 **Estado:** En desarrollo
 
 ## 📸 Capturas
-![Pantalla de inicio](telecom-home.png)  
+![Pantalla de inicio](teleocom-home.png)  
 ![Index](telecom-index.png)  
 
 ---
