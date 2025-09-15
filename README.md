@@ -3,7 +3,7 @@
 **Stack:** HTML | CSS | PHP | JavaScript | MySQL  
 **Estado:** En desarrollo
 
-🌐 **Demo:** [http://localhost/telecom/index.php](http://localhost/telecom/index.php)
+🌐 **Demo:** [https://avalob.github.io/Telecom-ERP/](https://avalob.github.io/Telecom-ERP/)
 
 ## 📸 Capturas
 ![Pantalla de inicio](teleocom-home.png)  
