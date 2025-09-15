@@ -3,6 +3,8 @@
 **Stack:** HTML | CSS | PHP | JavaScript | MySQL  
 **Estado:** En desarrollo
 
+🌐 **Demo:** [http://localhost/telecom/index.php](http://localhost/telecom/index.php)
+
 ## 📸 Capturas
 ![Pantalla de inicio](teleocom-home.png)  
 ![Index](telecom-index.png)  
