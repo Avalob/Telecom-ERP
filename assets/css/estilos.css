@@ -1,0 +1,193 @@
+/* Variables de colores elegantes */
+:root {
+    --azul-primario: #2C3E50;
+    /* Azul oscuro para elementos prominentes */
+    --dorado-suave: #F39C12;
+    /* Dorado suave para botones */
+    --gris-oscuro: #34495E;
+    /* Gris oscuro para fondos */
+    --blanco-suave: #ECF0F1;
+    /* Blanco suave para textos */
+    --verde-oliva: #27AE60;
+    /* Verde oliva para detalles secundarios */
+}
+
+/* Fuente moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    /* Fuente Poppins */
+}
+
+/* Fondo */
+body {
+    background-image: url(../img/laptop-fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: var(--gris-oscuro);
+    /* Fondo gris oscuro */
+}
+
+/* Contenedor principal */
+main {
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+/* Contenedor de la caja trasera */
+.contenedor_todo {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+/* Caja trasera */
+.caja_trasera {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: var(--azul-primario);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.caja_trasera div {
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+}
+
+.caja_trasera div p,
+.caja_trasera div button {
+    margin-top: 30px;
+}
+
+.caja_trasera div h3 {
+    font-weight: 500;
+    font-size: 28px;
+}
+
+/* Botón de la caja trasera */
+.caja_trasera button {
+    padding: 12px 40px;
+    border: 2px solid #fff;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+    border-radius: 8px;
+}
+
+.caja_trasera button:hover {
+    background: #fff;
+    color: var(--azul-primario);
+}
+
+/* Contenedor del formulario de login/register */
+.contenedor_login_register {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+/* Formulario de login/register */
+.contenedor_login_register form {
+    width: 100%;
+    padding: 80px 20px;
+    background: var(--blanco-suave);
+    position: absolute;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contenedor_login_register form h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--azul-primario);
+}
+
+/* Estilo de inputs */
+.contenedor_login_register form input {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    background: #F9F9F9;
+    font-size: 16px;
+    outline: none;
+    border-radius: 8px;
+    transition: border-color 300ms;
+}
+
+.contenedor_login_register form input:focus {
+    border-color: var(--azul-primario);
+}
+
+/* Botón del formulario */
+.contenedor_login_register form button {
+    padding: 12px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 16px;
+    background: var(--azul-primario);
+    color: white;
+    cursor: pointer;
+    outline: none;
+    transition: all 300ms;
+    border-radius: 8px;
+}
+
+.contenedor_login_register form button:hover {
+    background: var(--azul-secundario);
+}
+
+/* Estilos para las pantallas pequeñas */
+@media screen and (max-width: 850px) {
+    main {
+        margin-top: 50px;
+    }
+
+    .caja_trasera {
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja_trasera div {
+        margin: 0px;
+        position: absolute;
+    }
+
+    .contenedor_login_register {
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor_login_register form {
+        position: relative;
+    }
+}

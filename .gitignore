@@ -1,0 +1,19 @@
+# Archivos y carpetas a ignorar por Git
+config/
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+node_modules/
+vendor/
+.env
+.idea/
+.vscode/
+*.sqlite
+*.db
+php/
+controllers/
+models/
+fpdf/
+assets/sql/
